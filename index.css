@@ -1,4 +1,33 @@
-.refresh-button {
-    width: 100px;
-    height: 100px;
+body {
+    padding: 40px;
 }
+
+h1 {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#data {
+    padding-bottom: 30px;
+}
+
+.refresh-button {
+    width: 40px;
+    height: 40px;
+    background: rgb(56, 117, 194);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px rgb(28, 58, 97);
+}
+
+.refresh-button:hover {
+    background: rgb(28, 58, 97);
+    cursor: pointer
+}
+
+.refresh-button:active {
+    background-color: green;
+    box-shadow: 0 0;
+    transform: translateY(4px);
+  }

@@ -27,4 +27,10 @@ function bytes2gb(bytes) {
 
 window.addEventListener("load", (event) => {
     getData();
+    for(i = 0; i < arrayLength; i++) {
+        temp = document.createElement('div');
+        temp.className = 'results';
+        temp.innerHTML = arrayVariable[i];
+        document.getElementsByTagName('body')[0].appendChild(temp);
+    }
 });
