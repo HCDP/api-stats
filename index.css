@@ -26,18 +26,40 @@ h1, h3, p {
     box-shadow: 0 4px rgb(28, 58, 97);
 }
 
-.refresh-button:hover {
+.refresh-button:enabled:hover {
     background: rgb(28, 58, 97);
     cursor: pointer;
     box-shadow: 0 4px black;
 }
 
-.refresh-button:active {
+.refresh-button:enabled:active {
     background-color: green;
     box-shadow: 0 0;
     transform: translateY(4px);
-  }
+}
 
-  .stat-block {
+.refresh-button:disabled {
+    background-color: gray;
+    box-shadow: 0 0;
+    transform: translateY(4px);
+    cursor: not-allowed;
+}
+
+.stat-block {
     padding: 20px;
-  }
+}
+
+.loader {
+    margin: 20px;
+    border: 16px solid lightgray;
+    border-top: 16px solid rgb(56, 117, 194);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    animation: spin 1.5s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
