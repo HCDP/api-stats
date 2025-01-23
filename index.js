@@ -80,7 +80,7 @@ function getData() {
     refreshButton.disabled = true;
     dataDiv.appendChild(loadingDiv);
 
-    let url = "https://cistore.its.hawaii.edu/apistats"
+    let url = "https://api.hcdp.ikewai.org/apistats"
 
     fetch(url, {})
     .then((res) => {
